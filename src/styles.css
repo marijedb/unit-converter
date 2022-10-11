@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.conversion-container {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: #F4F4F4;
+    /* flex-grow: 1;
+    flex-basis: 0; */
+    padding: 20px;
+}
+
+.header-container {
+    background-color: #6943FF;
+    /* flex-grow: 1;
+    flex-basis: 0; */
+}
+
+.conversion-section {
+    background-color: #fff;
+}
