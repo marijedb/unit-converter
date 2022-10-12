@@ -31,7 +31,6 @@ function convertLength(value) {
     lengthConversion = `${value} meters = ${meterstoFeet.toFixed(3)} feet | ${value} feet = ${feetToMeters.toFixed(3)} meters`;
 }
 
-
 // this will calculate the volume from liters to gallons and the other way around.
 // Then it will store the template string inside variable
 // to be used to render to the page later. 
@@ -40,7 +39,6 @@ function convertVolume(value) {
     let gallonsToLiters = value / 0.264172;
     volumeConversion = `${value} liters = ${litersToGallons.toFixed(3)} gallons | ${value} gallons = ${gallonsToLiters.toFixed(3)} liters`;
 }
-
 
 // this will calculate the mass from kilos to pounds and the other way around.
 // Then it will store the template string inside variable
@@ -51,7 +49,6 @@ function convertMass(value) {
     massConversion = `${value} kilos = ${kilosToPounds.toFixed(3)} pounds | ${value} pounds = ${poundsToKilos.toFixed(3)} kilos`;
 }
 
-
 // THis function will render all template strings to the page to show
 // the user the conversion of the input he/she gave
 function render() {
@@ -61,7 +58,6 @@ function render() {
     // This will clear the inputfield for a new input
     inputField.value = "";
 }
-
 
 function toggleMode() {
 
@@ -92,7 +88,6 @@ function toggleMode() {
     changeBtnName();
 }
 
-
 function changeBtnName() {
     // This will check if modeBtn that is used to change between Dark and Light mode
     // contains the class "dark-mode" and switches text of button according whether
@@ -107,8 +102,6 @@ function changeBtnName() {
 
 // This puts an event listener on the Light/Dark mode button and executes the toggleMode function when clicked. 
 modeBtn.addEventListener("click", toggleMode);
-
-
 
 // This puts an event listener on the convert button and if clicked it will execute the function. 
 btnConvert.addEventListener("click", function () {
