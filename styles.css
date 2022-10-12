@@ -5,10 +5,19 @@ body {
     text-align: center;
 }
 
+
+/* Containers */
+
 #main-container {
     display: grid;
     width: 550px;
     margin: 20px auto 0px;
+}
+
+.switch-mode-container {
+    background-color: #6943FF;
+    padding-top: 20px;
+    text-align: end;
 }
 
 .conversion-container {
@@ -19,27 +28,21 @@ body {
 .header-container {
     display: grid;
     background-color: #6943FF;
-    padding: 20px 20px 20px;
-}
-
-.conversion-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #fff;
-    margin: 20px;
-    padding: 10px;
+    padding: 0px 20px 20px;
 }
 
 
 
-#main-title {
+
+
+/*  Header Section */
+
+.main-title {
     color: #fff;
     font-size: 1.5rem;
 }
 
-#input-field {
+.input-field {
     background-color: #6943FF;
     border: 2px solid #B295FF;
     border-radius: 5px;
@@ -54,6 +57,49 @@ body {
     margin-top: 20px;
 }
 
+.input-field:focus {
+    outline: none;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #3D3D3D;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    justify-self: center;
+    width: 120px;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+#btn-mode {
+    background-color: rgba(255, 255, 255, 0.25);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    padding: 10px 40px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+/* Conversion OUTPUT section */
+.conversion-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    margin: 20px;
+    padding: 10px;
+}
+
 .units-title {
     color: #5A537B;
     margin-bottom: 5px;
@@ -64,21 +110,46 @@ body {
 }
 
 
-#input-field:focus {
-    outline: none;
+
+
+/* Light / Dark mode */
+
+.mode-conv-container {
+    background-color: #1F2937;
 }
 
-.btn {
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
-    color: #3D3D3D;
-    font-family: 'Inter', sans-serif;
-    justify-self: center;
-    width: 120px;
-    margin-top: 20px;
-    padding: 15px;
+.mode-conv-section {
+    background-color: #273549;
 }
+
+.mode-units-title {
+    color: #CCC1FF;
+}
+
+.mode-container {
+    background-color: #473D6F;
+}
+
+.mode-input-field {
+    color: #D3D3D3;
+    border-color: #9488CA; 
+    background-color: #473D6F;
+}
+
+.mode-light-text {
+    color: #D3D3D3;
+}
+
+.mode-btn-convert {
+    background-color: #D3D3D3;
+    text-shadow: 0px 0px 1px #fff;
+}
+
+
+
+
+/* Media Query */
+
 
 @media only screen and (max-width: 600px) {
     #main-container {
